@@ -1,0 +1,102 @@
+/* Reset some default styles to ensure consistency across browsers */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background image */
+body {
+    background-color: #b3b3b3;
+}
+
+/* Apply a background color and some basic styling to the header */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Style the navigation menu */
+nav {
+    background-color: #444;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: inline;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Style the main content */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+/* Your existing CSS styles */
+
+/* Add styles for the bubble */
+.bubble {
+    width: 10px;
+    height: 10px;
+    background-color: #6ec526;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: growAndFade 4s cubic-bezier(0.33, 0.66, 0.66, 1) infinite; /* CSS animation for growth and fade */
+}
+
+@keyframes growAndFade {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 0.1;
+    }
+    50% {
+        width: 100vmin;
+        height: 90vmin;
+        opacity: 0.000001;
+    }
+    75% {
+        width: 1px;
+        height: 1px;
+        opacity: 0;
+    }
+    100% {
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+}
+
